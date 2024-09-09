@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogoPoke</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="carregar()">
+    <h1>QUEM É ESTE POKEMON?</h1>
+    <div>
+        <table id="visor"> 
+            <td>
+                <tr id="linhaPoke">
+                <td colspan="2" id="tdFoto">
+                    <img src="" alt="" id="foto"> 
+                </td>  
+            </tr>
+            <tr id="resposta">
+                <td>
+                <div id="aBusca">
+                <form autocomplete="off">
+                 <input type="text" id="pokemon">
+                 <input type="button" value="ENVIAR" id="buscar">
+                </form>
+                </div>
+                 <p id="tentativas"></p>
+                 <input type="button" id="reiniciar"value="tentar novamente" onclick="carregar()">
+                 <h1 id="resultado"></h1>
+                </td>
+            </tr>
+            </td>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
