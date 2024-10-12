@@ -9,7 +9,7 @@ let reiniciar = document.getElementById('reiniciar')
 let aBusca = document.getElementById('aBusca')
 
 let carregar=()=>{
-    random = parseInt((Math.random()*500)+1);
+    random = parseInt((Math.random()*150)+1);
     img.style.filter='brightness(0)'
     chances = 3
     tentativas.innerHTML = ('tentativas: '+chances)
