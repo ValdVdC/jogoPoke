@@ -20,12 +20,13 @@
             <tr id="resposta">
                 <td>
                 <div id="aBusca">
-                <form autocomplete="off">
-                 <input type="text" id="pokemon">
+                <form autocomplete="off" onsubmit="return false;">
+                 <input type="text" id="pokemon" onkeyup="buscarEnter(event)">
                  <input type="button" value="ENVIAR" id="buscar">
                 </form>
                 </div>
                  <p id="tentativas"></p>
+                 <p id="nomeTentativas"></p>
                  <input type="button" id="reiniciar"value="tentar novamente" onclick="carregar()">
                  <h1 id="resultado"></h1>
                 </td>
