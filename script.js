@@ -34,9 +34,10 @@ let busca=()=>{
         return response.json()
     })
     .then(data=>{
-            nT.push(pokemon.value)
+        let pokemonInput = (((pokemon.value).toLowerCase()).trim()).toString()
+            nT.push(pokemonInput)
             console.log(nT)
-        if(pokemon.value==data.name){
+        if(pokemonInput==data.name){
             img.style.filter='brightness(1)';
             tentativas.innerHTML=('Parabéns você acertou')
             reiniciar.style.display='block'
